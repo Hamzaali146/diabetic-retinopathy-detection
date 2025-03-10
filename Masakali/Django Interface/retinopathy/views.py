@@ -59,7 +59,7 @@ def classify_image(model, image_tensor):
         predicted_class = predicted.item()
         return predicted_class, CLASS_LABELS[predicted_class]  
 
-state_dict = torch.load('retinopathy\\fineTunedEfficientnet_b3.pt', map_location=torch.device('cpu'))
+state_dict = torch.load('retinopathy\\fineTunedInception.pt', map_location=torch.device('cpu'))
 
 # Print the keys
 # for key in state_dict.keys():
